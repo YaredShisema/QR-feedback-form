@@ -32,7 +32,7 @@ def send_email(name, email, comment):
 
 @app.route('/')
 def index():
-    return 'index.html'
+    return render_template('index.html')
 
 @app.route('/submit-feedback', methods=['POST'])
 def submit_feedback():
